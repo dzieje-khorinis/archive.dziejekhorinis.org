@@ -683,3 +683,10 @@ height: 110px;
   margin: 30px auto; 
   padding: 0px;
 }
+
+
+#left, #lang, #search, #node-95, #node-99, #node-101 {
+    filter: saturate(0) blur(1px);
+    pointer-events: none;
+}
+
