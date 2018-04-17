@@ -474,8 +474,8 @@ tr.even a:link, tr.even a:hover, tr.even a:active, tr.even a:visited {
  * Nodes & comments
  */
 .node {
-  margin: 0px 0px 10px 0px;
-  padding: 0px 0px 5px 0px;
+  margin: 0px 0px 40px 0px;
+  padding: 0px 0px 40px 0px;
   background: url(/images/node-border.jpg) bottom no-repeat;
 }
 
@@ -698,3 +698,29 @@ height: 110px;
     pointer-events: none;
 }
 
+/* article details */
+input.more {
+    display: none;
+}
+
+input.more + label {
+    display: block;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+input.more + label:hover {
+    text-decoration: underline;
+}
+
+input.more + label:after {
+    content: "więcej...";
+}
+
+input.more:not(:checked) ~ *:not(label) {
+    display: none;
+}
+
+input.more ~ *{
+    color: #aaa;
+}
